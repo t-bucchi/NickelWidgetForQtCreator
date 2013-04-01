@@ -29,14 +29,14 @@ class TouchDropDown : public QFrame
 	void showMenu();
 };
 
-/* TouchDropDownPlugin */
-class TouchDropDownPlugin : public QObject, public QDesignerCustomWidgetInterface
+/* TouchDropDownInterface */
+class TouchDropDownInterface : public QObject, public QDesignerCustomWidgetInterface
 {
     Q_OBJECT
     Q_INTERFACES(QDesignerCustomWidgetInterface)
 
 public:
-    TouchDropDownPlugin(QObject *parent = 0);
+    TouchDropDownInterface(QObject *parent = 0);
 
     bool isContainer() const;
     bool isInitialized() const;

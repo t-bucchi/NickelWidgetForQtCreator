@@ -1,0 +1,9 @@
+*.o
+*.so
+moc_*.cpp
+*~
+Makefile
+GPATH
+GRTAGS
+GSYMS
+GTAGS

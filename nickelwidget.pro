@@ -3,8 +3,11 @@ TARGET      = $$qtLibraryTarget($$TARGET)
 TEMPLATE    = lib
 QTDIR_build:DESTDIR     = $$QT_BUILD_TREE/plugins/designer
 
-HEADERS     = TouchDropDownPlugin.h
-SOURCES     = TouchDropDownPlugin.cpp
+HEADERS     = NickelWidgets.h
+SOURCES     = NickelWidgets.cpp
+
+HEADERS     += TouchDropDownInterface.h
+SOURCES     += TouchDropDownInterface.cpp
 
 # install
 target.path = $$[QT_INSTALL_PLUGINS]/designer
