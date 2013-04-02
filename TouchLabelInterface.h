@@ -8,8 +8,13 @@
 class TouchLabel : public QLabel
 {
 	Q_OBJECT
+	Q_PROPERTY(QPixmap selectedPixmap WRITE setSelectedPixmap)
+	Q_PROPERTY(QPixmap deselectedPixmap WRITE setDeselectedPixmap)
   public:
 	TouchLabel(QWidget *parent=0) : QLabel(parent) {}
+
+	void setSelectedPixmap(QPixmap const &) {}
+	void setDeselectedPixmap(QPixmap const &) {}
 
   signals:
     void tapped();
