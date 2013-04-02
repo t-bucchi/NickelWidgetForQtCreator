@@ -1,5 +1,5 @@
-#ifndef _TOUCHDROPDOWNPLUGIN_H
-#define _TOUCHDROPDOWNPLUGIN_H
+#ifndef _TOUCH_DROP_DOWN_INTERFACE_H
+#define _TOUCH_DROP_DOWN_INTERFACE_H
 
 #include <QDesignerCustomWidgetInterface>
 #include <QFrame>
@@ -54,4 +54,4 @@ private:
     bool initialized;
 };
 
-#endif // _TOUCHDROPDOWNPLUGIN_H
+#endif // _TOUCH_DROP_DOWN_INTERFACE_H

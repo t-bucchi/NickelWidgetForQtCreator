@@ -9,6 +9,9 @@ SOURCES     = NickelWidgets.cpp
 HEADERS     += TouchDropDownInterface.h
 SOURCES     += TouchDropDownInterface.cpp
 
+HEADERS     += TouchLabelInterface.h
+SOURCES     += TouchLabelInterface.cpp
+
 # install
 target.path = $$[QT_INSTALL_PLUGINS]/designer
 INSTALLS += target
