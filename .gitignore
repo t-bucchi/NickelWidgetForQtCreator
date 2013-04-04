@@ -1,6 +1,7 @@
 *.o
 *.so
 moc_*.cpp
+qrc_*.cpp
 *~
 Makefile
 GPATH

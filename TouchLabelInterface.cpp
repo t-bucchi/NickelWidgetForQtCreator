@@ -62,6 +62,9 @@ QString TouchLabelInterface::domXml() const
     return
 		"<ui language=\"c++\">\n"
 		" <widget class=\"TouchLabel\" name=\"touchLabel\">\n"
+		"  <property name=\"text\">\n"
+		"   <string>TouchLabel</string>\n"
+		"  </property>\n"
 		" </widget>\n"
 		"</ui>\n";
 }
