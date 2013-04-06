@@ -11,8 +11,8 @@
 class WirelessPaginationWidget : public QWidget
 {
 	Q_OBJECT
-	Q_PROPERTY(int totalPages WRITE setTotalPages)
-	Q_PROPERTY(int currentPage WRITE setCurrentPage)
+	Q_PROPERTY(int totalPages READ totalPages WRITE setTotalPages)
+	Q_PROPERTY(int currentPage READ currentPage WRITE setCurrentPage)
   public:
 	WirelessPaginationWidget(QWidget *parent=0) : QWidget(parent) {
 		QHBoxLayout *box = new QHBoxLayout(this);
@@ -39,6 +39,9 @@ class WirelessPaginationWidget : public QWidget
 		m_total = m_current = 0;
 		updateText();
 	}
+
+	int totalPages() { return m_total; }
+	int currentPage() { return m_current; }
 
   signals:
 	void nextPage();

@@ -15,6 +15,7 @@ class TouchDropDown : public QFrame
 		QVBoxLayout *box = new QVBoxLayout(this);
 		box->setSpacing(0);
 		QComboBox *combo = new QComboBox(this);
+		combo->setStyleSheet("border: 0px; background-color: white;");
 		box->addWidget(combo);
 		box->setContentsMargins(0, 0, 0, 0);
 	}
